@@ -27,14 +27,32 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each.
+   all three are array method that we use to do something with the items within the array,
+   map () and filter( ) both return a new array where reduce returns a sigle value.
+   map() is used when we want to covert our data,
+   filter( ) is used when we need to fiter something out of the array, the way that filter works is that it autamtically return an array of the items that are true.
+   reduce () is used to combine all the items in the array and give use back a single value,
+   it takes accumlator and we have to tell it what is the inital value or it will start from zero
 
 2. Explain the difference between a callback and a higher order function.
 
+a call back function is a fucntion that is passed to the higher order function as an argument, where the higher order function is the fucntion that takes call back as the argument and returns the result
+
 3. Explain what a closure is.
+
+when a function is created within another function, the inner function has acces to the variables within the outer function, where the outer has no assess to inner function varibales
+therfore we say that the innner function is closure
 
 4. Describe the four principles of the 'this' keyword.
 
+   - window binding: this will return to us what is in our window, amd it is treated as error
+   - implicit binding: when a function is invoked we look at the left of the dot and thats where 'this' refers to.
+   - explicit binding: when we assign 'this' explicitly using .bimd .call or .apply
+   - new binding: when we have constructor function 'this' refers to the newly cteate object
+
 5. Why do we need super() in an extended class?
+
+super ( ) tells the child to inherit both the attributes and methods from the parent class
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
